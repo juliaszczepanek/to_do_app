@@ -1,0 +1,183 @@
+*{
+    font-family:  Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    color: black;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.form__row{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0.5em;
+    gap: 0.1rem;
+
+}
+
+input {
+    border-radius: 12px;
+    width: auto;
+    height: 2.6rem;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    /* border-style: none; */
+
+}
+
+label{
+    padding-bottom: 20px;
+}
+
+.form__header{
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.form__btn{
+    border-radius: 50%;
+    border-style: none;
+    color: white;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.7rem;
+    margin-left: 0.7em;
+background-color:rgb(5, 58, 41);
+cursor: pointer;
+
+
+}.form__btn--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    border-radius: 16px;
+    width: auto;
+    height: 4.7rem;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    background-color: rgb(128, 0, 111);
+    color: white;
+    font-weight: 200;
+    letter-spacing: 1px;
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+
+}
+
+.list{
+list-style-type: none;
+display: grid;
+padding: 10px;
+}
+
+.form__item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.list li:has(input:checked) label::before{
+    content: "✓";
+    background-color: hsl(200, 100%, 40%);
+    color: hsl(200, 100%, 90%);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.list li label:hover::before{
+    background-color: hsl(200, 100%, 80%);
+}
+
+.list li label::before{
+    content: "";
+    display: block;
+    width: 0.9rem;
+height: 0.9rem;
+background-color: hsl(200, 100%, 90%);
+border-radius: 0.25rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.list li.has(input:checked) label:hover::before{
+    background: hsl(200, 100%, 30%)
+}
+
+
+.form__item input:focus{
+    border: 1px solid hsl(200, 100%, 70%)
+}
+
+.delete__btn{
+    background-color: transparent;
+    color: rgba(255, 0, 0, 0.8);
+    border: 0;
+    padding-bottom: 15px;
+    display: inline-block;
+    width: 3%;
+    cursor: pointer;
+}
+
+.list li:has(input:checked) label {
+    color: hsl(0, 0%, 82%);
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  
+  .list li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .list li label {
+    display: flex;
+    gap: 0.25rem;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .list li:has(input:focus-visible) label {
+    outline: 1px solid hsl(200, 100%, 50%);
+  }
+
+
+.list li input {
+    outline: none;
+    width: 0;
+    height: 0;
+    appearance: none;
+    pointer-events: none;
+    position: absolute;
+  }
+
+  .list li:has(input:checked) label::before {
+    content: "✔";
+    background: hsl(0, 0%, 3%);
+    color: hsl(200, 100%, 90%);
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+
+
+
