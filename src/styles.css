@@ -47,7 +47,7 @@ label{
     height: 4rem;
     font-size: 2.7rem;
     margin-left: 0.7em;
-background-color:rgb(5, 58, 41);
+background-color:rgb(0, 50, 34);
 cursor: pointer;
 
 
@@ -63,7 +63,7 @@ li{
     height: 4.7rem;
     font-size: 1.4rem;
     padding: 1.5rem;
-    background-color: rgb(128, 0, 111);
+    background-color: rgb(128, 0, 64);
     color: white;
     font-weight: 200;
     letter-spacing: 1px;
@@ -92,36 +92,28 @@ padding: 10px;
 
 .list li:has(input:checked) label::before{
     content: "✓";
-    background-color: hsl(200, 100%, 40%);
-    color: hsl(200, 100%, 90%);
+    background-color: hsl(303, 100%, 85%);
     font-size: 1rem;
     font-weight: bold;
 }
 
 .list li label:hover::before{
-    background-color: hsl(200, 100%, 80%);
+    background-color: hsl(199, 28%, 79%);
 }
 
 .list li label::before{
     content: "";
     display: block;
     width: 0.9rem;
-height: 0.9rem;
-background-color: hsl(200, 100%, 90%);
-border-radius: 0.25rem;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.list li.has(input:checked) label:hover::before{
-    background: hsl(200, 100%, 30%)
+    height: 0.9rem;
+    background-color: hsl(200, 100%, 90%);
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.form__item input:focus{
-    border: 1px solid hsl(200, 100%, 70%)
-}
 
 .delete__btn{
     background-color: transparent;
@@ -155,11 +147,6 @@ align-items: center;
     cursor: pointer;
     align-items: center;
   }
-  
-  .list li:has(input:focus-visible) label {
-    outline: 1px solid hsl(200, 100%, 50%);
-  }
-
 
 .list li input {
     outline: none;
@@ -172,8 +159,8 @@ align-items: center;
 
   .list li:has(input:checked) label::before {
     content: "✔";
-    background: hsl(0, 0%, 3%);
-    color: hsl(200, 100%, 90%);
+    background: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
     font-size: 0.75rem;
     font-weight: bold;
   }
