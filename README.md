@@ -1,4 +1,4 @@
-#To-do App#
+# To-do App
 
 This To-Do List App is a robust task manager built with HTML, CSS, JavaScript, and React. It offers intuitive features for effortless task organization, including adding, deleting, and completing tasks.
 
